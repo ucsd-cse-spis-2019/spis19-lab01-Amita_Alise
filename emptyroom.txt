@@ -1,1 +1,10 @@
+#this code will make the block oscillate East and West towards the top until boundary hit
+0 *x** -> E 0
+0 *E** -> W 1
+1 **x* -> W 1
+1 x*W* -> N 0
 
+# this code will make the block go all the way to the bottom boundary and finish filling the room
+1 N*W* -> S 2
+2 ***x -> S 2
+2 ***S -> E 0 
